@@ -1,0 +1,125 @@
+* {
+    margin: 0rem 0px;
+    padding: 2px;
+    background-color: hsl(30, 38%,92%);
+    display: block;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.wordsection {
+    background-color: white;
+    height: 700px;
+
+}
+.hide {
+    display: none;
+
+}
+
+.perfgray {
+    
+    color: gray;
+    font-display: 2;
+    background-color: white;
+
+
+}
+
+.main-heading {
+
+    font-size: 5rem;
+    background-color: white;
+    margin-bottom: 20px;
+    
+}
+
+.passage {
+
+    color: gray;
+    font-size: 3rem;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding:0rem
+    height: 500px;
+    width: 1000px
+    
+}
+
+@media screen and (max-width: 801px) {
+    .container {
+        flex-direction: column;
+        flex: 1;
+        display: flex;
+    }
+    .right{
+    
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        flex: 0.5;
+        padding: 30px 20px;
+        border-radius: 0 10px 10px 0
+    }
+
+    .left {
+        background-size: cover;
+        flex: 0.5;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 10px 0 0 10px;
+        
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+        flex: 0.5;
+    }
+    .right {
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1;
+        background-color: white;
+        width: 100;
+        display: block;
+        
+    }
+
+    .left {
+        flex-direction: row;
+        flex: 1;
+        width: 100;
+        display: block;
+
+    }
+}
+
+.price {
+    background-color: white;
+}
+
+#price-left {
+    background-color: white;
+    font-size: 1.5rem;
+    color: hsl(158, 36%, 37%);
+    padding: 0px 20px;
+}
+
+#price-right, #discount {
+    background-color: white;
+    font-size: 1rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.click {
+    background-color: white;
+}
